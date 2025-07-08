@@ -1,0 +1,50 @@
+body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #f8f4ee;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgzMCkiPjxyZWN0IHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHg9IjAiIHk9IjAiIGZpbGw9IiNlY2VjZTAiIG9wYWNpdHk9IjAuMiIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+        }
+        h1, h2, h3 {
+            font-family: 'Noto Serif Thai', serif;
+        }
+        .chinese-pattern {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNMjAgNTBjMC0xNi41NiAxMy40NC0zMCAzMC0zMHMzMCAxMy40NCAzMCAzMC0xMy40NCAzMC0zMCAzMHMtMzAtMTMuNDQtMzAtMzB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNkNjAwMDAiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLW9wYWNpdHk9IjAuMiIvPjwvc3ZnPg==');
+            background-size: 30px;
+            opacity: 0.1;
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
+        }
+        .nav-item:hover {
+            transform: translateY(-2px);
+        }
+        .nav-item.active {
+            border-bottom: 3px solid #d60000;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #d60000;
+            border: 2px solid white;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #d60000;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 0.8;
+        }
+        .floral-border {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNMjAgNTBjMC0xNi41NiAxMy40NC0zMCAzMC0zMHMzMCAxMy40NCAzMCAzMC0xMy40NCAzMC0zMCAzMHMtMzAtMTMuNDQtMzAtMzB6IiBmaWxsPSJub25lIiBzdHJva2U9IiNkNjAwMDAiIHN0cm9rZS13aWR0aD0iMSIvPjwvc3ZnPg==');
+            background-size: 20px;
+            opacity: 0.2;
+        }
