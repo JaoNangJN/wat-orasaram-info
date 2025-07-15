@@ -1,588 +1,876 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wat Ratcha Orasaram Ratchaworawihan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;700&family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;700&family=Prompt:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Header with Navigation -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="w-12 h-12 bg-red-700 rounded-full flex items-center justify-center mr-3">
-                    <i class="fas fa-place-of-worship text-white text-xl"></i>
-                </div>
-                <h1 class="text-xl md:text-2xl font-bold text-red-800">Wat Ratcha Orasaram</h1>
-            </div>
-            <nav class="hidden md:block">
-                <ul class="flex space-x-6">
-                    <li><a href="#home" class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition">Home</a></li>
-                    <li><a href="#history" class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition">History</a></li>
-                    <li><a href="#architecture" class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition">Architecture</a></li>
-                    <li><a href="#rituals" class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition">Rituals</a></li>
-                    <li><a href="#gallery" class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition">Gallery</a></li>
-                    <li><a href="#contact" class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition">Contact</a></li>
-                </ul>
-            </nav>
-            <button id="mobile-menu-button" class="md:hidden text-gray-800">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <div
+            class="w-12 h-12 bg-red-700 rounded-full flex items-center justify-center mr-3"
+          >
+            <i class="fas fa-place-of-worship text-white text-xl"></i>
+          </div>
+          <h1 class="text-xl md:text-2xl font-bold text-red-800">
+            Wat Ratcha Orasaram
+          </h1>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <ul class="py-2">
-                <li><a href="#home" class="block px-4 py-2 text-gray-800 hover:bg-red-50">Home</a></li>
-                <li><a href="#history" class="block px-4 py-2 text-gray-800 hover:bg-red-50">History</a></li>
-                <li><a href="#architecture" class="block px-4 py-2 text-gray-800 hover:bg-red-50">Architecture</a></li>
-                <li><a href="#rituals" class="block px-4 py-2 text-gray-800 hover:bg-red-50">Rituals</a></li>
-                <li><a href="#gallery" class="block px-4 py-2 text-gray-800 hover:bg-red-50">Gallery</a></li>
-                <li><a href="#contact" class="block px-4 py-2 text-gray-800 hover:bg-red-50">Contact</a></li>
-            </ul>
-        </div>
+        <nav class="hidden md:block">
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="#home"
+                class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition"
+                >หน้าหลัก</a
+              >
+            </li>
+            <li>
+              <a
+                href="#history"
+                class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition"
+                >ความเป็นมา</a
+              >
+            </li>
+            <li>
+              <a
+                href="#architecture"
+                class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition"
+                >สถาปัตยกรรม</a
+              >
+            </li>
+            <li>
+              <a
+                href="#rituals"
+                class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition"
+                >พิธีกรรม</a
+              >
+            </li>
+            <li>
+              <a
+                href="#gallery"
+                class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition"
+                >รูปภาพประกอบ</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="nav-item px-2 py-1 text-gray-800 hover:text-red-700 transition"
+                >ช่องทางติดต่อ</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden text-gray-800">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <ul class="py-2">
+          <li>
+            <a
+              href="#home"
+              class="block px-4 py-2 text-gray-800 hover:bg-red-50"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#history"
+              class="block px-4 py-2 text-gray-800 hover:bg-red-50"
+              >History</a
+            >
+          </li>
+          <li>
+            <a
+              href="#architecture"
+              class="block px-4 py-2 text-gray-800 hover:bg-red-50"
+              >Architecture</a
+            >
+          </li>
+          <li>
+            <a
+              href="#rituals"
+              class="block px-4 py-2 text-gray-800 hover:bg-red-50"
+              >Rituals</a
+            >
+          </li>
+          <li>
+            <a
+              href="#gallery"
+              class="block px-4 py-2 text-gray-800 hover:bg-red-50"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block px-4 py-2 text-gray-800 hover:bg-red-50"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 hero-overlay z-10"></div>
-        <img src="https://images.unsplash.com/photo-1551523711-9616a6a1e87d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-             alt="Wat Ratcha Orasaram" 
-             class="absolute inset-0 w-full h-full object-cover">
-        <div class="relative z-20 text-center px-4">
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Wat Ratcha Orasaram Ratchaworawihan</h1>
-            <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">The Royal Temple of King Rama III, blending Thai and Chinese architectural traditions</p>
-            <div class="bg-red-800 bg-opacity-70 text-white p-4 rounded-lg inline-block">
-                <p class="italic">"Temple of the Royal Son - Where two cultures meet in sacred harmony"</p>
-            </div>
-        </div>
-        <a href="#history" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-            <i class="fas fa-chevron-down text-white text-2xl"></i>
-        </a>
+    <section
+      id="home"
+      class="relative h-screen flex items-center justify-center overflow-hidden"
+    >
+      <div class="absolute inset-0 hero-overlay z-10"></div>
+      <img
+        src="D:\art_ratanakosin\wat-orasaram-info\picture\DSCF7266.JPG"
+        alt="Wat Ratcha Orasaram"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="relative z-20 text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+          วัดราชโอรสาราม ราชวรวิหาร
+        </h1>
+        <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
+          พระอารามหลวงชั้นเอก ชนิดราชวรวิหาร ประจำรัชกาลที่ 3
+          ที่มีสถาปัตยกรรมผสมผสานไทย-จีนที่งดงาม
+        </p>
+      </div>
+      <a
+        href="#history"
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce"
+      >
+        <i class="fas fa-chevron-down text-white text-2xl"></i>
+      </a>
     </section>
 
     <!-- History Section -->
     <section id="history" class="py-16 bg-white relative overflow-hidden">
-        <div class="chinese-pattern absolute inset-0"></div>
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-4">History of the Temple</h2>
-                <div class="w-20 h-1 bg-red-700 mx-auto"></div>
-            </div>
-            
-            <div class="flex flex-col md:flex-row items-center mb-12">
-                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                    <img src="https://images.unsplash.com/photo-1551524559-8af4e6624178?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80" 
-                         alt="King Rama III" 
-                         class="w-full rounded-lg shadow-lg">
-                </div>
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Founded by King Nangklao (Rama III)</h3>
-                    <p class="text-gray-700 mb-4">Established around 1832 (B.E. 2375), Wat Ratcha Orasaram stands as a testament to the vision of King Rama III, who sought to create a temple that would blend Thai and Chinese architectural traditions.</p>
-                    <p class="text-gray-700 mb-4">The name "Orasaram" meaning "Temple of the Royal Son" reflects its special status as an official temple of King Rama III, built to honor his royal lineage.</p>
-                    <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-700">
-                        <p class="text-gray-700 italic">"This temple represents the cultural fusion that King Rama III championed during his reign, combining Thai Buddhist traditions with Chinese artistic influences."</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="relative pl-8 mt-12">
-                <div class="timeline relative">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Historical Timeline</h3>
-                    
-                    <div class="timeline-item relative pl-8 mb-8">
-                        <h4 class="text-xl font-bold text-red-700 mb-2">1832 (B.E. 2375)</h4>
-                        <p class="text-gray-700">Temple construction begins under the patronage of King Rama III</p>
-                    </div>
-                    
-                    <div class="timeline-item relative pl-8 mb-8">
-                        <h4 class="text-xl font-bold text-red-700 mb-2">1840s</h4>
-                        <p class="text-gray-700">Completion of the main ordination hall with distinctive Chinese-style stucco motifs</p>
-                    </div>
-                    
-                    <div class="timeline-item relative pl-8 mb-8">
-                        <h4 class="text-xl font-bold text-red-700 mb-2">1851</h4>
-                        <p class="text-gray-700">Temple gains official recognition as a royal temple after King Rama III's passing</p>
-                    </div>
-                    
-                    <div class="timeline-item relative pl-8">
-                        <h4 class="text-xl font-bold text-red-700 mb-2">Present Day</h4>
-                        <p class="text-gray-700">Recognized as an important cultural heritage site preserving unique Sino-Thai architecture</p>
-                    </div>
-                </div>
-            </div>
+      <div class="chinese-pattern absolute inset-0"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-4">
+            ประวัติความเป็นมา
+          </h2>
+          <div class="w-20 h-1 bg-red-700 mx-auto"></div>
         </div>
+
+        <div class="flex flex-col md:flex-row items-center mb-12">
+          <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <img
+              src="D:\art_ratanakosin\wat-orasaram-info\picture\DSCF7217.JPG"
+              alt="King Rama III"
+              class="w-full rounded-lg shadow-lg"
+            />
+            <p class="my-3 text-gray-700 mb-4">
+              พระบรมสาทิศลักษณ์ของพระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว (รัชกาลที่
+              3) ประดิษฐานในพระอุโบสถของวัดราชโอรสฯ
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              วัดประจำรัชกาล พระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว
+            </h3>
+            <p class="text-gray-700 mb-4">
+              เริ่มการสร้างในปี พ.ศ. 2375 โดยพระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว
+              (รัชกาลที่ 3) ขณะทรงดำรงพระอิสริยยศเป็น "กรมหมื่นเจษฎาบดินทร์"
+              ในช่วงรัชสมัยของพระบาทสมเด็จพระพุทธเลิศหล้านภาลัย (รัชกาลที่ 2
+              และเป็นพระราชบิดาของพระองค์) บริเวณที่ตั้งเดิมของ "วัดจอมทอง"
+              ซึ่งสร้างแต่สมัยกรุงศรีอยุธยา
+              ซึ่งบริเวณเขตจอมทองในอดีตนั้นเป็นนิวาสสถานเดิมของพระญาติฝั่งพระราชมารดาของพระองค์ท่านอีกด้วย
+            </p>
+            <p class="text-gray-700 mb-4">
+              เหตุจากเมื่อครั้งพระเจ้าลูกยาเธอ
+              กรมหมื่นเจษฎาบดินทร์ทรงยกทัพไปสกัดทัพพม่าที่ด่านเจดีย์สามองค์
+              กาญจนบุรี ใน พ.ศ. 2363 เมื่อกระบวนทัพเรือมาถึงวัดจอมทอง
+              ทรงหยุดพักและทำพิธีเบิกโขลนทวารตามตำราพิชัยสงคราม
+              พร้อมทรงอธิษฐานขอให้การไปราชการทัพครั้งนี้ได้ชัยชนะแล้วจะกลับมาบูรณะปฏิสังขรณ์วัดจอมทอง
+              ภายหลังปรากฏว่าไม่มีทัพพม่ายกเข้ามาเนื่องจากประสบภัยธรรมชาติระหว่างทาง
+              จึงไม่เกิดการสู้รบและสูญเสีย พระองค์
+              จึงได้ทรงบูรณปฏิสังขรณ์วัดจอมทองใหม่และถวายเป็นพระอารามหลวงตามที่ได้อธิษฐานไว้
+              และได้รับพระราชทานนามใหม่ว่าวัดราชโอรส
+              ซึ่งหมายถึงพระราชโอรสคือพระองค์เอง
+              ซึ่งขณะนั้นเป็นพระราชโอรสของพระมหากษัตริย์
+            </p>
+            <p class="text-gray-700 mb-4">
+              การสร้างวัดราชโอรสฯ
+              ในครั้งนี้ถือเป็นการเริ่มต้นครั้งสำคัญของสถาปัตยกรรมสมัยรัชกาลที่
+              3 เป็นครั้งแรกที่สร้างโบสถ์วิหารโดยไม่มีช่อฟ้า ใบระกา หางหงส์
+              เนื่องจากในยุคนั้นนิยมทำด้วยไม้ ทรงเห็นว่าเป็นของหักพังง่ายไม่ถาวร
+              จึงเลิกใช้
+              นอกจากนี้ยังมีเสาพาไลโดยรอบเพื่อรองรับน้ำหนักชายคาปีกนกแทนคันทวยแบบเดิม
+              อีกทั้งยังผสมผสานงานสถาปัตยกรรมแบบจีนในการก่อสร้างทั้งการออกแบบผังตามหลักฮวงจุ้ยและสอดแรกงานศิลปะแบบจีน
+              อาทิเช่น ลายปูนปั้น การติดกระเบื้องประกอบหน้าบัน เป็นต้น
+              นับเป็นการประยุกต์ดัดแปลงที่ทุกคนต่างเห็นเป็นสิ่งแปลกและมีความงดงามแปลกตาเป็นที่เลื่องลือ
+              กระทั่งมีชาวไทยและชาวต่างชาติลงเรือมาชมมิได้ขาดรวมทั้ง จอห์น
+              ครอเฟิร์ด (John Crawfurd)
+              ราชทูตอังกฤษที่เข้ามาเจริญสัมพันธไมตรีในสมัยรัชกาลที่ 2
+              ซึ่งเขียนบันทึกยกย่องวัดแห่งนี้ไว้ว่า
+              "เป็นวัดที่สร้างขึ้นได้อย่างงดงามที่สุดของบางกอก"
+            </p>
+            <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-700">
+              <p class="text-gray-700 italic">
+                "วัดไหนๆ ก็ไม่ลือระบือยศ เหมือนวัดราชโอรสอันสดใส
+                เป็นวัดเดิมเริ่มสร้างไม่อย่างใคร ล้วนอย่างใหม่ทรงคิดประดิษฐ์ทำ
+                ทรงสร้างด้วยพระมหาวิริยาธึก โอฬารึกพร้อมพริ้งทุกสิ่งขำ
+                ล้วนเกลี้ยงเกลาเพราเพริศดูเลิศล้ำ ฟังข่าวคำลือสุดอยุธยา"
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative pl-8 mt-12">
+          <div class="timeline relative">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              เหตุการณ์สำคัญตามช่วงเวลา
+            </h3>
+
+            <div class="timeline-item relative pl-8 mb-8">
+              <h4 class="text-xl font-bold text-red-700 mb-2">
+                พุทธศักราช 2375
+              </h4>
+              <p class="text-gray-700">
+                พระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว ทรงสถาปนาวัดราชโอรสฯ
+                ขึ้นหลังจากบูรณะวัดจอมทองเดิม
+              </p>
+            </div>
+
+            <div class="timeline-item relative pl-8 mb-8">
+              <h4 class="text-xl font-bold text-red-700 mb-2">
+                พุทธศักราช 2397
+              </h4>
+              <p class="text-gray-700">
+                ประดิษฐานพระบรมอัฐิของพระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัวและศิลาจารึกดวงพระชันษาที่พระบาทสมเด็จพระจอมเกล้าเจ้าอยู่หัวนำมาบรรจุภายใต้ฐานชุกชีของพระประธานในพระอุโบสถ
+                พร้อมทั้งถวายพระนามว่า "พระพุทธอนันตคุณอดุลยญาณบพิตร"
+              </p>
+            </div>
+
+            <div class="timeline-item relative pl-8 mb-8">
+              <h4 class="text-xl font-bold text-red-700 mb-2">
+                พุทธศักราช 2504
+              </h4>
+              <p class="text-gray-700">
+                พระบาทสมเด็จพระปรมินทรมหาภูมิพลอดลุยเดช บรมนาถบพิตร โปรดเกล้าฯ
+                ให้ยกขึ้นประดิษฐานเหนือพระประธาน
+              </p>
+            </div>
+
+            <div class="timeline-item relative pl-8">
+              <h4 class="text-xl font-bold text-red-700 mb-2">ปัจจุบัน</h4>
+              <p class="text-gray-700">
+                วัดราชโอรสาราม
+                ถูกใช้เป็นสถานที่ประกอบพิธีกรรมทางศาสนาของพระบรมวงศานุวงศ์
+                ในพระราชพิธีประกอบผ้าพระกฐินเป็นประจำทุกปี
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Architecture Section -->
-    <section id="architecture" class="py-16 bg-gray-50 relative overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-4">Architecture & Artistic Features</h2>
-                <div class="w-20 h-1 bg-red-700 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-archway text-red-700 text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">Ordination Hall (Ubosot)</h3>
-                    </div>
-                    <p class="text-gray-700">The Ubosot features distinctive Chinese-style stucco motifs rarely seen in Thai temples, with intricate floral patterns and mythical creatures adorning its walls and gables.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-buddhism text-red-700 text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">Main Buddha Image</h3>
-                    </div>
-                    <p class="text-gray-700">Phra Phuttha Ankiros, the principal Buddha image, is enshrined in the Ubosot, cast in the traditional Thai style but surrounded by Chinese artistic influences.</p>
-                </div>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-6 mb-12">
-                <div class="relative group overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Chinese motifs" 
-                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                    <div class="absolute bottom-0 left-0 p-4 text-white">
-                        <h4 class="font-bold text-lg">Chinese Stucco Motifs</h4>
-                    </div>
-                </div>
-                
-                <div class="relative group overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Murals" 
-                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                    <div class="absolute bottom-0 left-0 p-4 text-white">
-                        <h4 class="font-bold text-lg">Unique Murals</h4>
-                    </div>
-                </div>
-                
-                <div class="relative group overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Chedis" 
-                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                    <div class="absolute bottom-0 left-0 p-4 text-white">
-                        <h4 class="font-bold text-lg">Chedis & Pavilions</h4>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Symbolism in Architecture</h3>
-                <p class="text-gray-700 mb-6 text-center max-w-3xl mx-auto">The temple's architecture is rich with symbolic meaning, blending Thai Buddhist symbolism with Chinese auspicious motifs. The color scheme of deep red and gold represents both Chinese prosperity and Thai royal dignity.</p>
-                
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-dragon text-red-700 text-2xl"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-800 mb-2">Mythical Creatures</h4>
-                        <p class="text-gray-600 text-sm">Chinese dragons and phoenixes symbolize imperial power and harmony</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-leaf text-red-700 text-2xl"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-800 mb-2">Floral Patterns</h4>
-                        <p class="text-gray-600 text-sm">Peonies and lotuses represent prosperity and spiritual purity</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-mountain text-red-700 text-2xl"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-800 mb-2">Mountain Motifs</h4>
-                        <p class="text-gray-600 text-sm">Symbolize the cosmic mountain Meru in Buddhist cosmology</p>
-                    </div>
-                </div>
-            </div>
+    <section
+      id="architecture"
+      class="py-16 bg-gray-50 relative overflow-hidden"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-4">
+            สถาปัตยกรรมและงานพุทธศิลป์
+          </h2>
+          <div class="w-20 h-1 bg-red-700 mx-auto"></div>
         </div>
+        <h3 class="text-2xl font-bold text-gray-800">
+          ตัวอย่างสิ่งก่อสร้างที่มีความสำคัญ
+        </h3>
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-archway text-red-700 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">พระอุโบสถ</h3>
+            </div>
+            <p class="text-gray-700">
+              อาคารประธานของวัด สร้างตามแบบพระราชนิยมในรัชกาลที่ 3
+              หรือแบบนอกอย่าง (นอกแบบไทยประเพณีดั้งเดิม) หน้าบันก่ออิฐแบ่งเป็น 2
+              ตับ ตับบนประดับด้วย "กระเบื้องเคลือบ" รูปสัญลักษณ์สื่อความหมายมงคล
+              อาทิเช่น แจกัน ช่อดอกไม้ หงส์คู่ เมฆ ผีเสื้อ
+              ส่วนตับล่างเป็นภาพทิวทัศน์ ประกอบด้วยบ้านมีคนอยู่ ภูเขา ต้นไม้
+              และสรรพสัตว์ทั้งหลาย ไม่มีการประกอบเครื่องลำยอง
+              ก่อสร้างแบบเน้นความแข็งแรงทนทาน จากโครงสร้างอาคารขนาดใหญ่
+              และเสาสี่เหลี่ยมรองรับขนาดใหญ่ไม่ประดับบัวหัวเสา
+              โดยล้อมรอบพระอุโบสถคือซุ้มเสมาทรงเกี้ยวซึ่งเป็นอีกหนึ่งประดิษฐกรรมใหม่ในสมัยรัชกาลที่
+              3 จากแบบเดิมที่เป็นเสมาตั้งแท่น
+            </p>
+            <p class="text-gray-700">
+              ประตูทางเข้าพระอุโบสถประกอบด้วยทวารบารเป็นตุ๊กตากระเบื้องเคลือบขนาดใหญ่
+              2 ตัวตั้งเอาไว้
+              ส่วนบานประตูด้านในวาดเป็นเซี่ยวกางหรือทวารบาลจีนโดยที่ด้านนอกเป็นบานประตูประดับมุกรูปมังกรดั้นเมฆ
+              เป็นลักษณะการใช้ทวารบาลซ้อนทวารบาล
+              ภายในประดิษฐานพระพุทธรูปประธานปางสมาธินามว่า
+              "พระพุทธอนันตคุณอดุลยญาณบพิตร"
+              ภายใต้พระนพปฎลเศวตฉัตรซึ่งภายใต้ฐานชุกชีบรรจุพระบรมอัฐิของพระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว
+              ส่วนผนังภายในตกแต่งด้วยจิตรกรรมฝาผนังลายเครื่องตั้งเครื่องมงคลอย่างจีน
+              ตำหนักจีน และ เทพเจ้า
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-buddhism text-red-700 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">
+                วิหารพระพุทธไสยาสน์
+              </h3>
+            </div>
+            <p class="text-gray-700">
+              หน้าบันของพระวิหารพระพุทธไสยาสน์แบ่งเป็น 2
+              ตับเช่นเดียวกับหน้าบันของพระอุโบสถ
+              กรอบหน้าบันประดับลวดลายด้วยปูนปั้นล้วน
+              ประกอบด้วยลายดอกไม้เรียงกันเป็นแถวมีพื้นสีเหลืองหน้าบันตับบนมีลวดลายตรงกลางเป็นสัญลักษณ์รูปไก่อยู่ในวงกลมตรงกลางมีพื้นสีแดง
+              มีหงส์คู่อยู่ด้านข้าง นอกนั้นเป็นลายนกกระเรียน ต้นไม้ ใบไม้ ดอกไม้
+              และเมฆสลับกันเต็มพื้นที่
+              สันนิษฐานว่ารูปไก่ที่อยู่ตรงกลางหน้าบันเป็นสัญลักษณ์ของปีระกา
+              แทนปีเกิดประจำพระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว
+              หน้าบันตับล่างเป็นรูปสวน ตรงกลางเป็นรูปศาลา มีเขามอ ลายเมฆ
+              ต้นไม้และสัตว์ เช่น สิงโต มังกร ประดับเต็มพื้นที่
+              รอบข้างพระวิหารถูกรายล้อมด้วยระเบียงคตซึ่งมีการติดแผ่นศิลาตำรับยาไว้
+              อีกทั้งมีเจดีย์สีขาวทั้งหมด 32 องค์ เสมือนการแทนพระพุทธเจ้า 32
+              พระองค์
+              ภายในประดิษฐานพระพุทธรูปไสยาสน์ขนาดใหญ่นามพระพุทธไสยาสน์นารถชนินทร์
+              ชินสากยบรมสมเด็จสรรเพชญพุทธบพิตร
+              ซึ่งพระพุทธไสยาสน์องค์นี้มีการทำลวดลายรดน้ำ เป็นมงคล 108 ประการ
+              ลักษณะเด่นอีกอย่างของพระพุทธไสยาสน์องค์นี้คือ
+              ยอดพระเกศของท่านจะปักเข้าไปในเสาต้นหนึ่งซึ่งอาจจะเป็นความตั้งใจแต่แรกสร้าง
+              ทำให้ผู้คนเกิดความเชื่อและเข้ามาขอพรเกี่ยวกับการทำธุรกิจให้ได้ยอดทะลุเป้า
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-buddhism text-red-700 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">วิหารพระยืน</h3>
+            </div>
+            <p class="text-gray-700">
+              วิหารพระยืนเป็นอาคารขนาดเล็กลงมา ซึ่งตั้งอยู่ฝั่งขวาของพระอุโบสถ
+              กรอบหน้าบันเป็นจิตรกรรมเขียนสีลวดลายแบบจีน
+              ภายในเต็มไปด้วยพระพุทธรูปสมัยอยุธยา เมื่อเข้าไปเบื้องหน้าคือ
+              "หลวงพ่ออู่ทอง"
+              พระพุทธรูปยืนปางประธานอภัยขนาดใหญ่สมัยอยุธยาตอนกลางและเมื่อเดินทะลุประตูเข้าไปด้านหลังหลวงพ่ออู่ทองก็จะพบกลุ่มพระพุทธรูปสมัยอยุธยาหลายองค์หลากยุค
+              โดยมีองค์ใหญ่สุดตรงกลางเป็นองค์ประธาน
+              ส่วนสาเหตุที่ภายในวิหารพระยืนเต็มไปด้วยพระพุทธรูปที่เก่าแก่ว่าสมัยรัชกาลที่
+              3 เพราะว่าอาคารหลังนี้เคยเป็นอุโบสถของวัดจอมทอง
+              วัดดั้งเดิมสมัยอยุธยาก่อนจะมาเป็นวัดราชโอรส
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-buddhism text-red-700 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">
+                ศาลาการเปรียญ วิหารพระนั่ง
+              </h3>
+            </div>
+            <p class="text-gray-700">
+              เป็นอาคารขนาดเล็กลงมา ซึ่งตั้งอยู่ฝั่งซ้ายของพระอุโบสถ
+              เคียงข้างกับหอระฆังวัด กรอบหน้าบันเป็นจิตรกรรมเขียนสีลวดลายแบบจีน
+              เช่นเดียวกับวิหารพระยืน ภายในจะพบพระพุทธชัยสิทธธรรมนาถ
+              เป็นพระพุทธรูปนั่งปางมารวิชัยแบบที่มีความพิเศษตรงพระหัตถ์ซ้ายแทนที่จะวางไว้ตรงหน้าตักกลับกำมือและถือตาลปัตรแทน
+              แต่แทนที่ตาลปัตรที่คล้ายจะบังพระพักตร์ของพระพุทธรูปองค์นี้มีช่องตรงกลางที่ทำให้พอจะสามารถมองเห็นพระพักตร์
+              และบริเวณข้างหน้าวิหาร จะมีแท่นบรรจุอัฐิของอดีตเจ้าอาวาสรูปต่าง ๆ
+              วัดราชโอรสฯ ตั้งอยู่
+            </p>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+          <div class="relative group overflow-hidden rounded-lg shadow-md">
+            <img
+              src=".\picture\DSCF7279.JPG"
+              alt="ภายนอกพระอุโบสถ"
+              class="w-full h-64 object-cover transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-4 text-white">
+              <h4 class="font-bold text-lg">ภายนอกพระอุโบสถ</h4>
+            </div>
+          </div>
+
+          <div class="relative group overflow-hidden rounded-lg shadow-md">
+            <img
+              src=".\picture\DSCF7261.JPG"
+              alt="Murals"
+              class="w-full h-64 object-cover transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-4 text-white">
+              <h4 class="font-bold text-lg">โดยรอบพระอุโบสถ</h4>
+            </div>
+          </div>
+
+          <div class="relative group overflow-hidden rounded-lg shadow-md">
+            <img
+              src=".\picture\DSCF7119.JPG"
+              alt="Chedis"
+              class="w-full h-64 object-cover transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-4 text-white">
+              <h4 class="font-bold text-lg">ภายในอุโบสถ</h4>
+            </div>
+          </div>
+
+          <div class="relative group overflow-hidden rounded-lg shadow-md">
+            <img
+              src=".\picture\DSCF7297.JPG"
+              alt="Chedis"
+              class="w-full h-64 object-cover transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-4 text-white">
+              <h4 class="font-bold text-lg">ภายนอกวิหารพระพุทธไสยาสน์</h4>
+            </div>
+          </div>
+
+          <div class="relative group overflow-hidden rounded-lg shadow-md">
+            <img
+              src=".\picture\DSCF7308.JPG"
+              alt="Chedis"
+              class="w-full h-64 object-cover transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-4 text-white">
+              <h4 class="font-bold text-lg">เจดีย์และระเบียงคตรอบพระวิหารฯ</h4>
+            </div>
+          </div>
+
+          <div class="relative group overflow-hidden rounded-lg shadow-md">
+            <img
+              src=".\picture\DSCF7325.JPG"
+              alt="Chedis"
+              class="w-full h-64 object-cover transition duration-500 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-4 text-white">
+              <h4 class="font-bold text-lg">ภายในวิหารพระพุทธไสยาสน์</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+  <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+    วิดีโอแนะนำวัดราชโอรสาราม ราชวรวิหาร
+  </h3>
+  <p class="text-gray-700 mb-6 text-center max-w-3xl mx-auto">
+    คลิปวิดีโอนี้นำเสนอภาพรวมของวัดราชโอรสาราม ราชวรวิหาร
+    รวมถึงสถาปัตยกรรมที่โดดเด่นและความสำคัญของวัด วัตถุประสงค์เพื่อประกอบการศึกษา รายวิชา
+    ศิลปะไทยสมัยรัตนโกสินทร์ จุฬาลงกรณ์มหาวิทยาลัย
+  </p>
+
+  <!-- ฝัง YouTube video -->
+  <div class="w-full max-w-3xl mx-auto mb-4">
+  <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-md">
+    <iframe
+      class="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/VjGfMJ118p0?si=xpWaSiNu9AcPoMbx"
+      title="YouTube video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  </div>
+</div>
+
+</div>
+
+      </div>
     </section>
 
     <!-- Rituals Section -->
     <section id="rituals" class="py-16 bg-white relative overflow-hidden">
-        <div class="floral-border absolute inset-0"></div>
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-4">Religious Rituals & Ceremonies</h2>
-                <div class="w-20 h-1 bg-red-700 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Annual Festivals</h3>
-                    
-                    <div class="bg-red-50 p-6 rounded-lg mb-6">
-                        <div class="flex items-start">
-                            <div class="bg-red-700 text-white p-2 rounded-full mr-4">
-                                <i class="fas fa-moon"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-2">Visakha Bucha Day</h4>
-                                <p class="text-gray-700">Celebrating the birth, enlightenment, and passing of the Buddha with candlelit processions around the temple's main chedi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-red-50 p-6 rounded-lg">
-                        <div class="flex items-start">
-                            <div class="bg-red-700 text-white p-2 rounded-full mr-4">
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-2">Makha Bucha Day</h4>
-                                <p class="text-gray-700">Commemorating the spontaneous gathering of 1,250 enlightened monks to hear the Buddha's teachings.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Regular Practices</h3>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="bg-red-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-hands-praying text-red-700"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Morning Alms Giving</h4>
-                                <p class="text-gray-600 text-sm">Daily at 6:00 AM, devotees offer food to monks on their morning alms round.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-red-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-book text-red-700"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Dhamma Talks</h4>
-                                <p class="text-gray-600 text-sm">Weekly teachings by resident monks every Sunday afternoon.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-red-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-bell text-red-700"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Meditation Sessions</h4>
-                                <p class="text-gray-600 text-sm">Guided meditation every Wednesday and Friday evening.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Special Ceremonies</h3>
-                
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="text-center">
-                        <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-user-shield text-red-700 text-2xl"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-800 mb-2">Ordination Ceremonies</h4>
-                        <p class="text-gray-600 text-sm">Traditional Thai Buddhist ordinations held throughout the year</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-water text-red-700 text-2xl"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-800 mb-2">Blessing Ceremonies</h4>
-                        <p class="text-gray-600 text-sm">House blessings, car blessings, and other life event ceremonies</p>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-ribbon text-red-700 text-2xl"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-800 mb-2">Merit-Making Events</h4>
-                        <p class="text-gray-600 text-sm">Special events for making merit, especially on Buddhist holy days</p>
-                    </div>
-                </div>
-            </div>
+      <div class="floral-border absolute inset-0"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-4">
+            พิธีกรรมในวัด
+          </h2>
+          <div class="w-20 h-1 bg-red-700 mx-auto"></div>
         </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              พิธีกรรมในโอกาสพิเศษ
+            </h3>
+
+            <div class="bg-red-50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="bg-red-700 text-white p-2 rounded-full mr-4">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-2">
+                    พระราชพิธีทอดผ้าพระกฐิน
+                  </h4>
+                  <p class="text-gray-700">
+                    พระบรมวงศานุวงศ์จะเสด็จพระราชดำเนินมาทอดผ้าพระกฐิน
+                    ที่วัดราชโอรสฯ ในช่วงระหว่างเดือนตุลาคมถึงพฤศจิกายน ของทุกปี
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              พิธีกรรมทั่วไป
+            </h3>
+
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="bg-red-100 p-2 rounded-full mr-4">
+                  <i class="fas fa-hands-praying text-red-700"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">
+                    สวดมนต์ทำวัตรเย็น
+                  </h4>
+                  <p class="text-gray-600 text-sm">
+                    เวลา 16.30 น. ทุกวัน ที่พระอุโบสถ
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-red-100 p-2 rounded-full mr-4">
+                  <i class="fas fa-book text-red-700"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">กระทำปาฏิโมกข์</h4>
+                  <p class="text-gray-600 text-sm">
+                    ทุก ๆ วันธรรมสวนะ (วันพระ) เป็นสังฆกรรมของภิกษุสงฆ์
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+            แผนผังวัดราชโอรสฯ
+          </h3>
+          <div class="text-center">
+            <div
+              class="w-auto h-auto flex items-center justify-center mx-auto mb-4"
+            >
+              <img
+                src=".\picture\travel-wat-ratchaorasaram-27.JPG"
+                alt="Ordination Ceremony"
+                class="w-auto h-auto object-cover "></img>
+            </div>
+            <p class="text-gray-600 text-sm">
+              ภาพ: www.sac.or.th/databases/thaiarts/artwork/130
+            </p>
+            <h4 class="font-bold text-gray-800 mb-2">
+                รูปแบบแผนผังวัดราชโอรสฯ แสดงถึงการจัดวางอาคารและสิ่งก่อสร้างต่าง ๆ
+                ซึ่งออกแบบตามหลักฮวงจุ้ยและความเชื่อทางพุทธศาสนา
+            </h4>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-4">Photo Gallery</h2>
-                <div class="w-20 h-1 bg-red-700 mx-auto"></div>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
-                <div class="gallery-item relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Temple exterior" 
-                         class="w-full h-48 object-cover transition duration-500 hover:scale-110">
-                    <div class="gallery-overlay absolute inset-0 bg-red-800 bg-opacity-0 flex items-center justify-center opacity-0 transition duration-300">
-                        <i class="fas fa-search-plus text-white text-2xl"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Buddha image" 
-                         class="w-full h-48 object-cover transition duration-500 hover:scale-110">
-                    <div class="gallery-overlay absolute inset-0 bg-red-800 bg-opacity-0 flex items-center justify-center opacity-0 transition duration-300">
-                        <i class="fas fa-search-plus text-white text-2xl"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Chinese motifs" 
-                         class="w-full h-48 object-cover transition duration-500 hover:scale-110">
-                    <div class="gallery-overlay absolute inset-0 bg-red-800 bg-opacity-0 flex items-center justify-center opacity-0 transition duration-300">
-                        <i class="fas fa-search-plus text-white text-2xl"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Ceremony" 
-                         class="w-full h-48 object-cover transition duration-500 hover:scale-110">
-                    <div class="gallery-overlay absolute inset-0 bg-red-800 bg-opacity-0 flex items-center justify-center opacity-0 transition duration-300">
-                        <i class="fas fa-search-plus text-white text-2xl"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Details" 
-                         class="w-full h-48 object-cover transition duration-500 hover:scale-110">
-                    <div class="gallery-overlay absolute inset-0 bg-red-800 bg-opacity-0 flex items-center justify-center opacity-0 transition duration-300">
-                        <i class="fas fa-search-plus text-white text-2xl"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Monks" 
-                         class="w-full h-48 object-cover transition duration-500 hover:scale-110">
-                    <div class="gallery-overlay absolute inset-0 bg-red-800 bg-opacity-0 flex items-center justify-center opacity-0 transition duration-300">
-                        <i class="fas fa-search-plus text-white text-2xl"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Architecture" 
-                         class="w-full h-48 object-cover transition duration-500 hover:scale-110">
-                    <div class="gallery-overlay absolute inset-0 bg-red-800 bg-opacity-0 flex items-center justify-center opacity-0 transition duration-300">
-                        <i class="fas fa-search-plus text-white text-2xl"></i>
-                    </div>
-                </div>
-                
-                <div class="gallery-item relative overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551523711-8af2e6f5a1b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                         alt="Grounds" 
-                         class="w-full h-48 object-cover transition duration-500 hover:scale-110">
-                    <div class="gallery-overlay absolute inset-0 bg-red-800 bg-opacity-0 flex items-center justify-center opacity-0 transition duration-300">
-                        <i class="fas fa-search-plus text-white text-2xl"></i>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center">
-                <button class="px-6 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition flex items-center mx-auto">
-                    <i class="fas fa-images mr-2"></i> View More Photos
-                </button>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-4">
+            รูปภาพประกอบแสดงรายละเอียด
+          </h2>
+          <div class="w-20 h-1 bg-red-700 mx-auto"></div>
         </div>
+
+        <!-- Gallery grid -->
+        <div
+          id="galleryGrid"
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8"
+        ></div>
+      </div>
+
+      <!-- Modal เต็มจอ -->
+      <div
+        id="imageModal"
+        class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden"
+        onclick="closeModal()"
+      >
+        <div
+          class="relative max-w-4xl w-full mx-4"
+          onclick="event.stopPropagation()"
+        >
+          <img
+            id="modalImage"
+            src=""
+            class="w-full max-h-[80vh] object-contain rounded-lg"
+          />
+          <p id="modalCaption" class="text-white mt-4 text-center"></p>
+          <button
+            class="absolute top-2 right-2 text-white text-3xl hover:text-red-500"
+            onclick="closeModal()"
+          >
+            &times;
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-4">Directions & Contact Information</h2>
-                <div class="w-20 h-1 bg-red-700 mx-auto"></div>
-            </div>
-            
-            <div class="flex flex-col md:flex-row gap-8 mb-12">
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Location</h3>
-                    <p class="text-gray-700 mb-6">Bang Kho, Chom Thong District, Bangkok, Thailand</p>
-                    
-                    <div class="space-y-4 mb-6">
-                        <div class="flex items-start">
-                            <div class="bg-red-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-clock text-red-700"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Opening Hours</h4>
-                                <p class="text-gray-600">Daily, 8:00 AM – 5:00 PM</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-red-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-phone text-red-700"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Phone</h4>
-                                <p class="text-gray-600">+66 2 123 4567</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-red-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-envelope text-red-700"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
-                                <p class="text-gray-600">info@watratchaorasaram.org</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Transportation</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-gray-50 p-3 rounded-lg">
-                            <i class="fas fa-bus text-red-700 mb-2"></i>
-                            <p class="text-sm text-gray-600">Bus No. 40, 84, 120</p>
-                        </div>
-                        <div class="bg-gray-50 p-3 rounded-lg">
-                            <i class="fas fa-ship text-red-700 mb-2"></i>
-                            <p class="text-sm text-gray-600">Chao Phraya Express Boat</p>
-                        </div>
-                        <div class="bg-gray-50 p-3 rounded-lg">
-                            <i class="fas fa-taxi text-red-700 mb-2"></i>
-                            <p class="text-sm text-gray-600">Taxi or Ride-hailing</p>
-                        </div>
-                        <div class="bg-gray-50 p-3 rounded-lg">
-                            <i class="fas fa-car text-red-700 mb-2"></i>
-                            <p class="text-sm text-gray-600">Private Vehicle</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="md:w-1/2">
-                    <div class="h-full rounded-lg overflow-hidden shadow-lg">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.223180428012!2d100.4933153153286!3d13.7562096011501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2990a0f5f5f5f%3A0xf5f5f5f5f5f5f5f5!2sWat%20Ratcha%20Orasaram%20Ratchaworawihan!5e0!3m2!1sen!2sth!4v1620000000000!5m2!1sen!2sth" 
-                                width="100%" 
-                                height="100%" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Contact Form</h3>
-                
-                <form class="max-w-2xl mx-auto">
-                    <div class="grid md:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label for="name" class="block text-gray-700 mb-2">Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 mb-2">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
-                        </div>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <label for="subject" class="block text-gray-700 mb-2">Subject</label>
-                        <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
-                    </div>
-                    
-                    <div class="mb-6">
-                        <label for="message" class="block text-gray-700 mb-2">Message</label>
-                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
-                    </div>
-                    
-                    <div class="text-center">
-                        <button type="submit" class="px-8 py-3 bg-red-700 text-white rounded-lg hover:bg-red-800 transition">
-                            Send Message
-                        </button>
-                    </div>
-                </form>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-red-800 mb-4">
+            ที่ตั้งและช่องทางการติดต่อ
+          </h2>
+          <div class="w-20 h-1 bg-red-700 mx-auto"></div>
         </div>
+
+        <div class="flex flex-col md:flex-row gap-8 mb-12">
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">ที่อยู่</h3>
+            <p class="text-gray-700 mb-6">
+              เลขที่ 258 ซอยเอกชัย 4 ถนนเอกชัย แขวงบางค้อ เขตจอมทอง กรุงเทพมหานคร 10150
+            </p>
+
+            <div class="space-y-4 mb-6">
+              <div class="flex items-start">
+                <div class="bg-red-100 p-2 rounded-full mr-4">
+                  <i class="fas fa-clock text-red-700"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">ช่วงเวลาทำการ</h4>
+                  <p class="text-gray-600">ทุกวัน 6.00 น. – 18.00 น.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-red-100 p-2 rounded-full mr-4">
+                  <i class="fas fa-phone text-red-700"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">เบอร์โทรติดต่อ</h4>
+                  <p class="text-gray-600">02 893 7274</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-red-100 p-2 rounded-full mr-4">
+                  <i class="fas fa-user text-red-700"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">เจ้าอาวาสวัด</h4>
+                  <p class="text-gray-600">พระพรหมวชิรปัญญาจารย์ (ทองดี สุรเตโช)</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              วิธีการเดินทางมาวัดราชโอรสฯ
+            </h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-gray-50 p-3 rounded-lg">
+                <i class="fas fa-bus text-red-700 mb-2"></i>
+                <p class="text-sm text-gray-600">รถเมล์ รถสองแถว หรือรถกระป๊อเล็ก</p>
+              </div>
+              <div class="bg-gray-50 p-3 rounded-lg">
+                <i class="fas fa-ship text-red-700 mb-2"></i>
+                <p class="text-sm text-gray-600">นั่งเรือผ่านคลองด่าน ลงที่ศาลาหน้าวัด</p>
+              </div>
+              <div class="bg-gray-50 p-3 rounded-lg">
+                <i class="fas fa-taxi text-red-700 mb-2"></i>
+                <p class="text-sm text-gray-600">รถแท็กซี่</p>
+              </div>
+              <div class="bg-gray-50 p-3 rounded-lg">
+                <i class="fas fa-car text-red-700 mb-2"></i>
+                <p class="text-sm text-gray-600">รถยนต์ส่วนตัว</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="h-full rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.223180428012!2d100.4933153153286!3d13.7562096011501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2990a0f5f5f5f%3A0xf5f5f5f5f5f5f5f5!2sWat%20Ratcha%20Orasaram%20Ratchaworawihan!5e0!3m2!1sen!2sth!4v1620000000000!5m2!1sen!2sth"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-red-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Wat Ratcha Orasaram</h3>
-                    <p class="text-red-200 mb-4">The Royal Temple of King Rama III, blending Thai and Chinese architectural traditions.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-white hover:text-red-300 transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-white hover:text-red-300 transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="text-white hover:text-red-300 transition">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="text-red-200 hover:text-white transition">Home</a></li>
-                        <li><a href="#history" class="text-red-200 hover:text-white transition">History</a></li>
-                        <li><a href="#architecture" class="text-red-200 hover:text-white transition">Architecture</a></li>
-                        <li><a href="#rituals" class="text-red-200 hover:text-white transition">Rituals</a></li>
-                        <li><a href="#gallery" class="text-red-200 hover:text-white transition">Gallery</a></li>
-                        <li><a href="#contact" class="text-red-200 hover:text-white transition">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Visiting Hours</h3>
-                    <p class="text-red-200 mb-2">Daily: 8:00 AM – 5:00 PM</p>
-                    <p class="text-red-200">Special ceremonies may affect opening hours</p>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Newsletter</h3>
-                    <p class="text-red-200 mb-4">Subscribe to receive updates about temple events and activities.</p>
-                    <form class="flex">
-                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
-                        <button type="submit" class="bg-red-700 px-4 py-2 rounded-r-lg hover:bg-red-800 transition">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Wat Ratcha Orasaram</h3>
+            <p class="text-red-200 mb-4">
+              The Royal Temple of King Rama III, blending Thai and Chinese
+              architectural traditions.
+            </p>
+            <div class="flex space-x-4">
+              <a href="https://www.facebook.com/WatRatchaorotsaram" class="text-white hover:text-red-300 transition">
+                <i class="fab fa-facebook-f"></i>
+              </a>
             </div>
-            
-            <div class="border-t border-red-800 pt-8 text-center text-red-300">
-                <p>&copy; 2023 Wat Ratcha Orasaram Ratchaworawihan. All rights reserved.</p>
-                <p class="mt-2">Website created with devotion by the temple volunteers.</p>
-            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#home" class="text-red-200 hover:text-white transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#history"
+                  class="text-red-200 hover:text-white transition"
+                  >History</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#architecture"
+                  class="text-red-200 hover:text-white transition"
+                  >Architecture</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#rituals"
+                  class="text-red-200 hover:text-white transition"
+                  >Rituals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="text-red-200 hover:text-white transition"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-red-200 hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4">Visiting Hours</h3>
+            <p class="text-red-200 mb-2">Daily: 6:00 AM – 6:00 PM</p>
+            <p class="text-red-200">
+              Special ceremonies may affect opening hours
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+            <p class="text-red-200 mb-4">
+              Subscribe to receive updates about temple events and activities.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800"
+              />
+              <button
+                type="submit"
+                class="bg-red-700 px-4 py-2 rounded-r-lg hover:bg-red-800 transition"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
         </div>
+
+        <div class="border-t border-red-800 pt-8 text-center text-red-300">
+          <p>
+            &copy; 2025 Wat Ratcha Orasaram Ratchaworawihan. All rights
+            reserved.
+          </p>
+          <p class="mt-2">
+            Website created with devotion by the temple volunteers.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-red-700 text-white rounded-full shadow-lg hidden transition hover:bg-red-800">
-        <i class="fas fa-arrow-up"></i>
+    <button
+      id="back-to-top"
+      class="fixed bottom-8 right-8 w-12 h-12 bg-red-700 text-white rounded-full shadow-lg hidden transition hover:bg-red-800"
+    >
+      <i class="fas fa-arrow-up"></i>
     </button>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
